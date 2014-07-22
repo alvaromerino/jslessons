@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loops!!!</title>
+	<script type="text/javascript">
+
+	/* Loops in JavaScript, four types:
+	 * for loop
+	 * for/in loop (explained later)
+	 * while loop
+	 * do...while loop
+	 */
+
+	var students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+
+	// For (Loop)
+	document.write("<b>Using for loops </b><br />");
+	for (i=0;i<students.length;i++)
+	{
+		document.write(students[i] + "<br />");
+	}
+
+	//While (Loop)
+	var i = 0, j = 1, k;
+	document.write("<br /><b>Fibonacci series less than 40</b><br />");
+
+	while(i < 40)
+	{
+		document.write(i + "<br />");
+		k = i+j;
+		i = j;
+		j = k;
+	}
+
+	//Do...while (Loop)
+	document.write("<br /><b>Using do...while loops </b><br />");
+	var i = 2;
+	document.write("Even numbers less than 20<br />");
+
+	do{
+		document.write(i + "<br />");
+		i = i + 2;
+	}while(i<20)
+
+	//For in (Loop)
+	document.write("<br /><b>Using for-in loops </b><br />");
+	for (var s in students)
+	{
+		document.write(s + ": " + students[s] + "<br />");
+	}
+
+	var employee={first:"John", last:"Doe", department:"Accounts"};
+	var details = "";
+
+	document.write("<b>Using for/in loops </b><br />");
+	for (var x in employee)
+	{
+		details = x + ": " + employee[x];
+		document.write(details + "<br />");
+	}
+
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>

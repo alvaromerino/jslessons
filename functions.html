@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions!!!</title>
+	<script type="text/javascript">
+
+	/* Function Example */
+	function myFunction()
+	{
+		document.write("This is a simple function.<br />");
+	}
+
+	myFunction();
+
+	/* Function Example with args */
+	var count = 0;
+	function countVowels(name)
+	{
+		for (var i = 0; i < name.length; i++) {
+			if (name[i] == "a" || name[i] == "e" || name[i] == "i" ||
+				name[i] == "o" || name[i] == "u")
+			{
+				count = count + 1;
+			}
+		};
+	
+		document.write("Hello " + name + "!!! Your name has " + count + " vowels.");
+	}
+
+	var myName = prompt("Please enter your name: ");
+	countVowels(myName);
+
+	/* Function Example with return value */
+	function returnSum(first, second)
+	{
+		var sum = first + second;
+		return sum;
+	}
+
+	var firstNo = 78;
+	var secondNo = 22;
+	document.write("<br />" + firstNo + " + " + secondNo + " = " + returnSum(firstNo,secondNo));
+
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>

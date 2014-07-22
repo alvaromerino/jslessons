@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays!!!</title>
+	<script type="text/javascript">
+
+	/* ARRAY properties & methods
+	 * length property --> If you want to know the number of elements in an array, you can use 					the length property.
+	 * prototype property -->If you want to add new properties and methods,you can use the prototype property.
+	 * reverse method --> You can reverse the order of items in an array using reverse method.
+	 * sort method --> You can sort the items in an array using sort method.
+	 * pop method --> You can remove the last item of an array using pop method.
+	 * shift method --> You can remove the first item of an array using shift method.
+	 */
+
+	var students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+	Array.prototype.displayItems = function()
+	{
+		for (var i = 0; i < this.length; i++) 
+		{
+			document.write(this[i] + "<br  />");
+		}
+	}
+
+	document.write("students array<br />");
+	students.displayItems();
+
+	document.write("<br />The number of items in students array is " + students.length + "<br />");
+
+	document.write("<br />The SORTED students array<br />");
+	students.sort();
+	students.displayItems();
+
+	document.write("<br />The REVERSED students array<br />");
+	students.reverse();
+	students.displayItems();
+
+	document.write("<br />THE students array after REMOVING the LAST item<br />");
+	students.pop();
+	students.displayItems();
+
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>
